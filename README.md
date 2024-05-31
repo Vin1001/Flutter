@@ -43,7 +43,7 @@ Step 1 - Enter the coordinates and zoom value to create the map
 
 Step 2 - Select the icon to be rendered on the map and number of icons to be added
 
-![Step 2](assets/step2.png)
+![Step 2](assets/step2(1).png)
 
 Step 3 - Hold and Drag to move the icon markers and click to delete. If the map is dragged manually the map center gets updated on the top. Futher features involve changing to a 3D map for better view of the scene, switching to full screen, etc.
 

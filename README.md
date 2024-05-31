@@ -32,7 +32,10 @@ Currently, in Indian judicial system the prosecution presents a physical documen
 Clone the repository:
 
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/Vin1001/Mapper-Project.git
+   cd Mapper-Project
    ```
+## Usage
+
+
 

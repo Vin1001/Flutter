@@ -1,9 +1,9 @@
-# Custom Mapp
+# Scene Map
 
 Powered by <br>
 ![Mappls](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg)
 
-A brief description of your project, its purpose, and what it does.
+Currently, in Indian judicial system the prosecution presents a physical document denoting the map of crime/accident scene/property disputes. Using the mappls API a scene map creator has been developed to fully digitize the process. The software renders the map based on fed co-ordinates and the customizable markers represent the entities/evidences present at the scene. 
 
 ## Table of Contents
 

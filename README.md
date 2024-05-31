@@ -39,7 +39,7 @@ Clone the repository:
 
 Step 1 - Enter the coordinates and zoom value to create the map
 
-![Step 1](step1.png)
+![Step 1](assets/step1.png)
 
 Step 2 - Select the icon to be rendered on the map and number of icons to be added
 

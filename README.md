@@ -52,7 +52,7 @@ Step 3 - Hold and Drag to move the icon markers and click to delete. If the map 
 ### Screenshots
 
 Example 3D view-
-![3D view](assets/mapscreen.png)
+![3D view](assets/mapscreen.PNG)
 
 
 

@@ -27,7 +27,6 @@ Currently, in Indian judicial system the prosecution presents a physical documen
 
 - [Mappls API](https://about.mappls.com/api/)
 
-### Steps
 
 Clone the repository:
 

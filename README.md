@@ -11,7 +11,6 @@ Currently, in Indian judicial system the prosecution presents a physical documen
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
@@ -53,6 +52,10 @@ Step 3 - Hold and Drag to move the icon markers and click to delete. If the map 
 
 Example 3D view-
 ![3D view](assets/mapscreen.PNG)
+
+### License
+
+
 
 
 

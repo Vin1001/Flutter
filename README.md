@@ -1,6 +1,6 @@
-# Project Name
+# Custom Mapp
 
-![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![Flutter](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg))
 
 A brief description of your project, its purpose, and what it does.
 

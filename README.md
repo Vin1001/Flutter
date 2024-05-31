@@ -38,9 +38,11 @@ Clone the repository:
 ## Usage
 
 Step 1 - Enter the coordinates and zoom value to create the map
+
 ![Step 1](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg)
 
 Step 2 - Select the icon to be rendered on the map and number of icons to be added
+
 ![Step 2](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg)
 
 Step 3 - Hold and Drag to move the icon markers and click to delete. If the map is dragged manually the map center gets updated on the top. Futher features involve changing to a 3D map for better view of the scene, switching to full screen, etc.

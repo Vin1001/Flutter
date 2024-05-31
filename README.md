@@ -47,7 +47,7 @@ Step 2 - Select the icon to be rendered on the map and number of icons to be add
 
 Step 3 - Hold and Drag to move the icon markers and click to delete. If the map is dragged manually the map center gets updated on the top. Futher features involve changing to a 3D map for better view of the scene, switching to full screen, etc.
 
-![Step 3](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg)
+![Step 3](assets/step3.png)
 
 
 

@@ -19,6 +19,7 @@ Currently, in Indian judicial system the prosecution presents a physical documen
 - A fully digized process for renderding accurate marking of scene maps using real-time and precise map data hance reducing human error.
 - New markers can easily be added according to the need of the case hence making it a flexible tool.
 - Two or more considerably different locations can be depicted on the map at the same time unlike using sperate physical maps which can create confusion.
+- Dynamic 2D/3D view for better analysis and assessment
 
 ## Installation
 

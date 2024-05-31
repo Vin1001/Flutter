@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style> #map {margin-left: 7%; margin-bottom: 0.25%;margin-top: 0.25%; padding: 0;width: 86%;height: 81%;position: absolute;z-index: 1;}; 
+    #formap{
+        position: absolute;
+        z-index: 2;
+    }
+    #formicon{
+        position: absolute;
+        z-index: 1;
+    }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">CustoMap</h1>
+    <form id="formap" method="POST">
+        <div class="input_fields">
+        <input size="50px" placeholder="Latitude" style=" margin-left: 16px; padding-right: 0px;" type="number" step="0.000001" min="-90" max="90" name="Latitudeinp" id="text_field1" required>
+
+        <input size="50px" placeholder="Longitude" style="margin-top: 0px; margin-bottom: 5px; margin-left: 1px; margin-right: 4px; padding-right: 0px;" type="number" step="0.000001" min="-180" max="180" name="Longitudeinp" id="text_field2" required>
+        <input size="10px" placeholder="zoom" type="number" step="0.1" min="0" max="22" id="zoomlvl">
+        <input type="submit" value="Create">
+        </div>
+        <!-- <div align="center" style="margin-left: 0px; margin-top: 1%; text-align: center;"> 
+            <input type="submit" value="Submit">
+        </div> -->
+    </form>
+    <label style="margin-left: 16px;" for="icon_name">Icon</label>
+    <select style="margin-left: 6px;" name="icons" id="icon_name">
+        <option value="Man">Man</option>
+        <option value="Woman">Woman</option>
+        <option value="opel">Traffic Light</option>
+        <option value="audi">Bus</option>
+      </select>
+
+    <input placeholder="count" min="0" name="countinp" id="icon_count" required>
+    <button onclick="addicons()">Add</button> <p style="display: inline; margin-left: 15%;" id="mapcentre"></p>   
+
+
+    <div class="latemap" id="map"></div>
+
+    <script src="https://apis.mappls.com/advancedmaps/api/cfd59a143370d6d61bd01e37ab1a7f5f/map_sdk?v=3.0&layer=vector" defer async></script>
+    <script>
+        var mapForm = document.getElementById("formap");
+        var ntform = document.getElementById("newtabform");
+        var iconN = document.getElementById("icon_name");
+        var iconC = document.getElementById("icon_count");
+        var lati = document.getElementById("text_field1").value;
+        var longi = document.getElementById("text_field2").value;
+        var map;
+        var isMapShow =false;
+        iconN.disabled = true; // Enable the text field
+        iconC.disabled = true; // Enable the text field
+        
+        mapForm.addEventListener("submit", function (event) {
+            event.preventDefault(); 
+
+            var lati = document.getElementById("text_field1").value;
+            var longi = document.getElementById("text_field2").value;
+            var zoom = document.getElementById("zoomlvl").value;
+            var mapCentre = document.getElementById('mapcentre');
+
+            map = new mappls.Map('map', {center:{lat:lati,lng:longi}, zoom:zoom, zoomControl:true, location: true});
+            isMapShow =true;
+            iconN.disabled = false; // Enable the text field
+            iconC.disabled = false; // Enable the text field
+            mapCentre.textContent = 'Map Center Long:' + map.getCenter()['lng']+ '\tLat:' + map.getCenter()['lat'];
+
+            map.addListener('drag', function () {
+                cent = map.getCenter();
+                mapCentre.textContent = 'Map Center- Long:' + cent['lng']+ 'Lat:' + cent['lat'];
+            });
+        });
+
+
+        function addicons() {
+
+            addMarker(iconN.value,iconC.value);
+        }
+
+        function addMarker(name,count) {
+            var lati = document.getElementById("text_field1").value;
+            var longi = document.getElementById("text_field2").value;
+            var url = name;
+            var cent = map.getCenter();
+            var markers = new Array(count); 
+            let i = 0;
+            try {
+                while(i<count){
+                let c = i;
+                markers[c] = new mappls.Marker({
+                map: map,
+                position: cent,
+                fitbounds: false,
+                icon_url: 'mapIcons/'+url+'.png',
+                width: 40,
+                height: 40,
+                draggable:true,
+                });
+                markers[c].addListener('click', function () {mappls.remove({map:map, layer:markers[c]});});
+                i=i+1;
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    </script>
+</body>
+</html>

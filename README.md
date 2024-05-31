@@ -1,7 +1,7 @@
 # Custom Mapp
 
 Powered by
-![Mappls](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg)
+![Mappls](https://cdn-public.mappls.com/about-mappls/assets/images/mappls-logo.svg) \n
 
 A brief description of your project, its purpose, and what it does.
 
